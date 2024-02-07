@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enter your login and password</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+      .hi {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        padding: 20px;
+        border-radius: 5px;
+       
+      }
+      body,
+      td {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #333333;
+        font-size: 1em;
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        text-align: center;
+        background-color: #e6e6e6;
+      }
+      .username {
+        text-align: center;
+        border-radius: 30px;
+        border-width: 0px;
+        height: 40px;
+        width: 300px;
+      }
+      .password {
+        text-align: center;
+        border-radius: 30px;
+        border-width: 0px;
+        height: 40px;
+        width: 300px;
+      }
+      .loginBOX {
+        background-color: lightgrey;
+        border-radius: 20px;
+        width: 320px;
+        padding: 15px 25px;
+        position: relative;
+      }
+      .Enter {
+        position: relative;
+        border-radius: 20px;
+        text-align: center;
+        color: rgb(61, 60, 60);
+        font-weight: bold;
+        font-size: 15px;
+        border-width: 0px;
+        height: 30px;
+        width: 65px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .signin {
+        position: relative;
+        border-radius: 20px;
+        text-align: center;
+        color: rgb(61, 60, 60);
+        font-weight: bold;
+        font-size: 15px;
+        border-width: 0px;
+        height: 30px;
+        width: 65px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hi">
+      <div class="loginBOX">
+        <br />
+        <h1>Log In</h1>
+        <br />
+        <form
+          method="post"
+          action="https://www.authpro.com/auth/GameCreatorGames/"
+          name="aform"
+        >
+          <input type="hidden" name="action" value="login" />
+          <input type="hidden" name="user" value="GameCreatorGames" />
+          <input type="hidden" name="hide" value="" />
+          <table id="ap_table_login" class="center">
+            <tr style="display: none" id="ap_form_err">
+              <td colspan="2" id="ap_form_errmes" class="error">
+                You have entered incorrect login or password.<br />
+                Please try again.<br /><br />
+              </td>
+            </tr>
+            <tr style="display: none" id="ap_form_inf">
+              <td colspan="2" id="ap_form_infmes"></td>
+            </tr>
+            <tr class="ap_form_inp">
+              <td>
+                <input
+                  type="text"
+                  name="login"
+                  value=""
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="username"
+                  class="username"
+                  placeholder="Username"
+                />
+              </td>
+            </tr>
+
+            <tr class="ap_form_inp">
+              <td>
+                <input
+                  type="password"
+                  name="password"
+                  autocomplete="current-password"
+                  class="password"
+                  placeholder="Password"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <br />
+                <input type="checkbox" name="remember" value="1" /> Remember me
+              </td>
+            </tr>
+            <tr id="ap_form_isb">
+              <td>
+                <br />
+                <input
+                  type="submit"
+                  id="ap_form_btn"
+                  value="Log In"
+                  class="Enter"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="2" id="ap_form_lostmes">
+                <a
+                  href="https://www.authpro.com/auth/GameCreatorGames/?action=lost"
+                  >Forgot your username or password?</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" id="ap_form_regmes">
+                Not member yet? Click
+                <a
+                  href="https://www.authpro.com/auth/GameCreatorGames/?action=reg"
+                  >here</a
+                >
+                to register.
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://www.authpro.com/js/aform.js?cipudzck"
+    ></script>
+    <script>
+      function logInForm(){
+          document.URL = "../html/signin.html"
+    </script>
+  </body>
+</html>
