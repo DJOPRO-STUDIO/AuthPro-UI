@@ -4,75 +4,7 @@
     <title>Enter your login and password</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <style type="text/css">
-      .hi {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-        padding: 20px;
-        border-radius: 5px;
-       
-      }
-      body,
-      td {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        color: #333333;
-        font-size: 1em;
-        font-weight: normal;
-        font-style: normal;
-      }
-      body {
-        text-align: center;
-        background-color: white;
-      }
-      .username {
-        text-align: center;
-        border-radius: 30px;
-        border-width: 0px;
-        height: 40px;
-        width: 300px;
-      }
-      .password {
-        text-align: center;
-        border-radius: 30px;
-        border-width: 0px;
-        height: 40px;
-        width: 300px;
-      }
-      .loginBOX {
-        background-color: lightgrey;
-        border-radius: 20px;
-        width: 320px;
-        padding: 15px 25px;
-        position: relative;
-      }
-      .Enter {
-        position: relative;
-        border-radius: 20px;
-        text-align: center;
-        color: rgb(61, 60, 60);
-        font-weight: bold;
-        font-size: 15px;
-        border-width: 0px;
-        height: 30px;
-        width: 65px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-      .signin {
-        position: relative;
-        border-radius: 20px;
-        text-align: center;
-        color: rgb(61, 60, 60);
-        font-weight: bold;
-        font-size: 15px;
-        border-width: 0px;
-        height: 30px;
-        width: 65px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="../css/login.css">
   </head>
   <body>
     <div class="hi">
@@ -147,6 +79,7 @@
             <tr>
               <td colspan="2" id="ap_form_lostmes">
                 <a
+                  class="loginLINK"
                   href="https://www.authpro.com/auth/GameCreatorGames/?action=lost"
                   >Forgot your username or password?</a
                 >
@@ -156,7 +89,8 @@
               <td colspan="2" id="ap_form_regmes">
                 Not member yet? Click
                 <a
-                  href="https://www.authpro.com/auth/GameCreatorGames/?action=reg"
+                  class="loginLINK"
+                  href="https://sites.google.com/view/gamer-creator-games/signup"
                   >here</a
                 >
                 to register.
@@ -170,9 +104,6 @@
       type="text/javascript"
       src="https://www.authpro.com/js/aform.js?cipudzck"
     ></script>
-    <script>
-      function logInForm(){
-          document.URL = "../html/signin.html"
-    </script>
+    
   </body>
 </html>
